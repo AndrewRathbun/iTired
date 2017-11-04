@@ -13,4 +13,5 @@ Note: You can modify your root directory entry in the textbox even if you loaded
 Note
 -----
 
-Please report any bugs.
+1. Please report any bugs.
+2. This program is distributd under the GPL-3.0 license. Please understand the terms of use before using.
