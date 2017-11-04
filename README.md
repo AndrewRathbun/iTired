@@ -14,4 +14,4 @@ Note
 -----
 
 1. Please report any bugs.
-2. This program is distributd under the GPL-3.0 license. Please understand the terms of use before using.
+2. This program is distributd under the GPL-3.0 license. Please understand the terms of use before using the source code.
