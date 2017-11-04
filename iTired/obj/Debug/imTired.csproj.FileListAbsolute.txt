@@ -1,0 +1,9 @@
+E:\imTired\imTired\bin\Debug\imTired.exe.config
+E:\imTired\imTired\bin\Debug\imTired.exe
+E:\imTired\imTired\bin\Debug\imTired.pdb
+E:\imTired\imTired\obj\Debug\imTired.csprojResolveAssemblyReference.cache
+E:\imTired\imTired\obj\Debug\imTired.Properties.Resources.resources
+E:\imTired\imTired\obj\Debug\imTired.csproj.GenerateResource.Cache
+E:\imTired\imTired\obj\Debug\imTired.exe
+E:\imTired\imTired\obj\Debug\imTired.pdb
+E:\imTired\imTired\obj\Debug\imTired.Form_main.resources
