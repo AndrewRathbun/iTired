@@ -10,8 +10,9 @@ There's two ways:
 
 Note: You can modify your root directory entry in the textbox even if you loaded the data from a file. Just make sure to press the "GO!" button to confirm your changes.
 
-Note
+Notes
 -----
 
 1. Please report any bugs.
-2. This program is distributd under the GPL-3.0 license. Please understand the terms of use before using the source code.
+2. This program is distributed under the GPL-3.0 license. Please understand the terms of use before using the source code.
+3. The utility should run on Windows, Linux, and Mac. For Linux and Mac, please use Mono to run the exe.
