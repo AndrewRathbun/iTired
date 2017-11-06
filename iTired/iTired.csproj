@@ -75,11 +75,36 @@
     <Compile Include="Form_main.Designer.cs">
       <DependentUpon>Form_main.cs</DependentUpon>
     </Compile>
+    <Compile Include="HexEditor\BuiltInContextMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="HexEditor\ByteCharConverters.cs" />
+    <Compile Include="HexEditor\ByteCollection.cs" />
+    <Compile Include="HexEditor\BytePositionInfo.cs" />
+    <Compile Include="HexEditor\Caret.cs" />
+    <Compile Include="HexEditor\DataBlock.cs" />
+    <Compile Include="HexEditor\DataMap.cs" />
+    <Compile Include="HexEditor\DynamicByteProvider.cs" />
+    <Compile Include="HexEditor\DynamicFileByteProvider.cs" />
+    <Compile Include="HexEditor\FileByteProvider.cs" />
+    <Compile Include="HexEditor\FileDataBlock.cs" />
+    <Compile Include="HexEditor\FindOptions.cs" />
+    <Compile Include="HexEditor\HexBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="HexEditor\HexCasing.cs" />
+    <Compile Include="HexEditor\IByteProvider.cs" />
+    <Compile Include="HexEditor\MemoryDataBlock.cs" />
+    <Compile Include="HexEditor\NativeMethods.cs" />
+    <Compile Include="HexEditor\Util.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RootDirectory.cs" />
     <EmbeddedResource Include="Form_main.resx">
       <DependentUpon>Form_main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HexEditor\HexBox.resx">
+      <DependentUpon>HexBox.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -117,6 +142,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="HexEditor\HexBox.bmp" />
     <Content Include="SMB2-smiley.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

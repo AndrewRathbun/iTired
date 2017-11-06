@@ -7,3 +7,4 @@ E:\iTired\iTired\obj\Release\iTired.csproj.GenerateResource.Cache
 E:\iTired\iTired\obj\Release\iTired.exe
 E:\iTired\iTired\obj\Release\iTired.pdb
 E:\iTired\iTired\obj\Release\iTired.csprojResolveAssemblyReference.cache
+E:\iTired\iTired\obj\Release\iTired.HexEditor.HexBox.resources

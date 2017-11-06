@@ -30,9 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_main));
-            this.richTextBox_data = new System.Windows.Forms.RichTextBox();
             this.groupBox_data = new System.Windows.Forms.GroupBox();
-            this.button_go = new System.Windows.Forms.Button();
             this.groupBox_info = new System.Windows.Forms.GroupBox();
             this.groupBox_other = new System.Windows.Forms.GroupBox();
             this.label_start_cluster_num = new System.Windows.Forms.Label();
@@ -70,6 +68,7 @@
             this.loadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.richTextBox_data = new iTired.HexEditor.HexBox();
             this.groupBox_data.SuspendLayout();
             this.groupBox_info.SuspendLayout();
             this.groupBox_other.SuspendLayout();
@@ -81,42 +80,17 @@
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // richTextBox_data
-            // 
-            this.richTextBox_data.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.richTextBox_data.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox_data.Location = new System.Drawing.Point(6, 19);
-            this.richTextBox_data.MaxLength = 95;
-            this.richTextBox_data.Name = "richTextBox_data";
-            this.richTextBox_data.Size = new System.Drawing.Size(489, 56);
-            this.richTextBox_data.TabIndex = 0;
-            this.richTextBox_data.Text = "";
-            // 
             // groupBox_data
             // 
             this.groupBox_data.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox_data.Controls.Add(this.button_go);
             this.groupBox_data.Controls.Add(this.richTextBox_data);
             this.groupBox_data.Location = new System.Drawing.Point(12, 25);
             this.groupBox_data.Name = "groupBox_data";
-            this.groupBox_data.Size = new System.Drawing.Size(501, 116);
+            this.groupBox_data.Size = new System.Drawing.Size(500, 96);
             this.groupBox_data.TabIndex = 1;
             this.groupBox_data.TabStop = false;
             this.groupBox_data.Text = "Byte Data";
-            // 
-            // button_go
-            // 
-            this.button_go.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button_go.Location = new System.Drawing.Point(420, 81);
-            this.button_go.Name = "button_go";
-            this.button_go.Size = new System.Drawing.Size(75, 23);
-            this.button_go.TabIndex = 1;
-            this.button_go.Text = "GO!";
-            this.button_go.UseVisualStyleBackColor = true;
-            this.button_go.Click += new System.EventHandler(this.button_go_Click);
             // 
             // groupBox_info
             // 
@@ -128,23 +102,24 @@
             this.groupBox_info.Controls.Add(this.groupBox_dates);
             this.groupBox_info.Controls.Add(this.groupBox_attributes);
             this.groupBox_info.Enabled = false;
-            this.groupBox_info.Location = new System.Drawing.Point(12, 147);
+            this.groupBox_info.Location = new System.Drawing.Point(12, 127);
             this.groupBox_info.Name = "groupBox_info";
-            this.groupBox_info.Size = new System.Drawing.Size(501, 254);
+            this.groupBox_info.Size = new System.Drawing.Size(500, 252);
             this.groupBox_info.TabIndex = 2;
             this.groupBox_info.TabStop = false;
             this.groupBox_info.Text = "Information";
             // 
             // groupBox_other
             // 
-            this.groupBox_other.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox_other.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox_other.Controls.Add(this.label_start_cluster_num);
             this.groupBox_other.Controls.Add(this.textBox_start_cluster_num);
             this.groupBox_other.Controls.Add(this.label_file_size);
             this.groupBox_other.Controls.Add(this.textBox_file_byte_size);
-            this.groupBox_other.Location = new System.Drawing.Point(316, 16);
+            this.groupBox_other.Location = new System.Drawing.Point(315, 16);
             this.groupBox_other.Name = "groupBox_other";
-            this.groupBox_other.Size = new System.Drawing.Size(172, 229);
+            this.groupBox_other.Size = new System.Drawing.Size(172, 227);
             this.groupBox_other.TabIndex = 20;
             this.groupBox_other.TabStop = false;
             this.groupBox_other.Text = "Other";
@@ -234,7 +209,8 @@
             // 
             // groupBox_dates
             // 
-            this.groupBox_dates.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.groupBox_dates.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.groupBox_dates.Controls.Add(this.label_created_date);
             this.groupBox_dates.Controls.Add(this.textBox_created_date);
             this.groupBox_dates.Controls.Add(this.label_created_time);
@@ -247,7 +223,7 @@
             this.groupBox_dates.Controls.Add(this.textBox_modified_time);
             this.groupBox_dates.Location = new System.Drawing.Point(12, 95);
             this.groupBox_dates.Name = "groupBox_dates";
-            this.groupBox_dates.Size = new System.Drawing.Size(174, 150);
+            this.groupBox_dates.Size = new System.Drawing.Size(174, 148);
             this.groupBox_dates.TabIndex = 19;
             this.groupBox_dates.TabStop = false;
             this.groupBox_dates.Text = "Dates";
@@ -339,11 +315,13 @@
             // 
             // groupBox_attributes
             // 
-            this.groupBox_attributes.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox_attributes.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox_attributes.Controls.Add(this.flowLayoutPanel1);
             this.groupBox_attributes.Location = new System.Drawing.Point(192, 16);
             this.groupBox_attributes.Name = "groupBox_attributes";
-            this.groupBox_attributes.Size = new System.Drawing.Size(118, 229);
+            this.groupBox_attributes.Size = new System.Drawing.Size(117, 227);
             this.groupBox_attributes.TabIndex = 4;
             this.groupBox_attributes.TabStop = false;
             this.groupBox_attributes.Text = "Attributes";
@@ -361,7 +339,7 @@
             this.flowLayoutPanel1.Controls.Add(this.checkBox_archive);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(6, 19);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(106, 204);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(105, 202);
             this.flowLayoutPanel1.TabIndex = 6;
             // 
             // checkBox_readonly
@@ -450,7 +428,7 @@
             this.aboutToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(525, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(524, 24);
             this.menuStrip1.TabIndex = 4;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -484,18 +462,35 @@
             this.aboutToolStripMenuItem1.Text = "About";
             this.aboutToolStripMenuItem1.Click += new System.EventHandler(this.aboutToolStripMenuItem1_Click);
             // 
+            // richTextBox_data
+            // 
+            this.richTextBox_data.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.richTextBox_data.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.richTextBox_data.LineInfoVisible = true;
+            this.richTextBox_data.Location = new System.Drawing.Point(12, 20);
+            this.richTextBox_data.Name = "richTextBox_data";
+            this.richTextBox_data.ShadowSelectionColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(60)))), ((int)(((byte)(188)))), ((int)(((byte)(255)))));
+            this.richTextBox_data.Size = new System.Drawing.Size(482, 70);
+            this.richTextBox_data.TabIndex = 2;
+            this.richTextBox_data.InsertActiveChanged += new System.EventHandler(this.richTextBox_data_InsertActiveChanged);
+            this.richTextBox_data.ByteProviderChanged += new System.EventHandler(this.richTextBox_data_ByteProviderChanged);
+            this.richTextBox_data.KeyDown += new System.Windows.Forms.KeyEventHandler(this.richTextBox_data_KeyDown);
+            this.richTextBox_data.KeyUp += new System.Windows.Forms.KeyEventHandler(this.richTextBox_data_KeyUp);
+            this.richTextBox_data.MouseUp += new System.Windows.Forms.MouseEventHandler(this.richTextBox_data_MouseUp);
+            // 
             // Form_main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(525, 404);
+            this.ClientSize = new System.Drawing.Size(524, 391);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.groupBox_info);
             this.Controls.Add(this.groupBox_data);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
-            this.MaximizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(530, 430);
             this.Name = "Form_main";
             this.Text = "iTired";
             this.groupBox_data.ResumeLayout(false);
@@ -518,10 +513,7 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.RichTextBox richTextBox_data;
         private System.Windows.Forms.GroupBox groupBox_data;
-        private System.Windows.Forms.Button button_go;
         private System.Windows.Forms.GroupBox groupBox_info;
         private System.Windows.Forms.GroupBox groupBox_attributes;
         private System.Windows.Forms.CheckBox checkBox_archive;
@@ -559,6 +551,7 @@
         private System.Windows.Forms.GroupBox groupBox_dates;
         private System.Windows.Forms.GroupBox groupBox_other;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private HexEditor.HexBox richTextBox_data;
     }
 }
 

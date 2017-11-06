@@ -1,4 +1,3 @@
-E:\iTired\iTired\obj\Debug\iTired.csprojResolveAssemblyReference.cache
 E:\iTired\iTired\obj\Debug\iTired.Form_main.resources
 E:\iTired\iTired\obj\Debug\iTired.csproj.GenerateResource.Cache
 E:\iTired\iTired\bin\Debug\iTired.exe.config
@@ -7,3 +6,4 @@ E:\iTired\iTired\bin\Debug\iTired.exe
 E:\iTired\iTired\bin\Debug\iTired.pdb
 E:\iTired\iTired\obj\Debug\iTired.exe
 E:\iTired\iTired\obj\Debug\iTired.pdb
+E:\iTired\iTired\obj\Debug\iTired.HexEditor.HexBox.resources
