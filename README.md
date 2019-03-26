@@ -1,6 +1,6 @@
 # iTired
 
-This program interprets 32 byte Root Directory entries for the FAT file system.
+This program interprets 32 byte Root Directory entries for the FAT file system. Made for the class CIS 3605.
 
 How to use
 ----------
